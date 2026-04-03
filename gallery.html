@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Guru Daksh Government Polytechnic, Hisar</title>
+  <meta name="description" content="Photo gallery of Guru Daksh Government Polytechnic Hisar campus, labs, workshops, events, and student life.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{navy:{900:'#0F172A',800:'#1E293B',700:'#334155'},emerald:{500:'#10B981',600:'#059669'},saffron:{500:'#F97316',400:'#FB923C'}}}}}</script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+    *{font-family:'Inter',system-ui,sans-serif;scroll-behavior:smooth}
+    .nav-link{position:relative}.nav-link::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:2px;background:#10B981;transition:width .3s}.nav-link:hover::after,.nav-link.active::after{width:100%}
+    .fade-in{opacity:0;transform:translateY(20px);transition:all .6s ease}.fade-in.visible{opacity:1;transform:translateY(0)}
+    .mobile-menu{transform:translateX(100%);transition:transform .3s ease}.mobile-menu.open{transform:translateX(0)}
+    .backdrop-overlay{opacity:0;visibility:hidden;transition:all .3s}.backdrop-overlay.open{opacity:1;visibility:visible}
+    .gallery-item{cursor:pointer;overflow:hidden;border-radius:12px;transition:all .3s}
+    .gallery-item:hover{transform:scale(1.02);box-shadow:0 20px 40px rgba(0,0,0,.15)}
+    .gallery-item img{transition:transform .5s ease}
+    .gallery-item:hover img{transform:scale(1.1)}
+    .lightbox{opacity:0;visibility:hidden;transition:all .3s ease}
+    .lightbox.active{opacity:1;visibility:visible}
+    .lightbox img{max-height:85vh;max-width:90vw;object-fit:contain;border-radius:12px}
+    /* Masonry-like layout */
+    .masonry{columns:1;column-gap:16px}
+    @media(min-width:640px){.masonry{columns:2}}
+    @media(min-width:1024px){.masonry{columns:3}}
+    .masonry .gallery-item{break-inside:avoid;margin-bottom:16px;display:inline-block;width:100%}
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+  <div class="bg-navy-900 text-white text-xs py-1.5 hidden md:block"><div class="max-w-7xl mx-auto px-4 flex justify-between items-center"><span>📧 gphisar@gphisar.ac.in | 📞 +91-1662-277460</span><span>Under Dept. of Technical Education, Haryana</span></div></div>
+  <nav id="navbar" class="bg-white/95 backdrop-blur-md sticky top-0 z-50 shadow-sm"><div class="max-w-7xl mx-auto px-4"><div class="flex items-center justify-between h-16 md:h-20"><a href="index.html" class="flex items-center gap-3 shrink-0"><div class="w-10 h-10 md:w-12 md:h-12 bg-navy-900 rounded-full flex items-center justify-center text-white font-bold text-sm md:text-base">GP</div><div><h1 class="text-sm md:text-base font-bold text-navy-900 leading-tight">Guru Daksh Govt. Polytechnic</h1><p class="text-[10px] md:text-xs text-gray-500">Hisar, Haryana | Est. 1992</p></div></a><div class="hidden lg:flex items-center gap-6"><a href="index.html" class="nav-link text-sm font-medium text-gray-600 hover:text-navy-900">Home</a><a href="about.html" class="nav-link text-sm font-medium text-gray-600 hover:text-navy-900">About Us</a><a href="departments.html" class="nav-link text-sm font-medium text-gray-600 hover:text-navy-900">Departments</a><a href="admissions.html" class="nav-link text-sm font-medium text-gray-600 hover:text-navy-900">Admissions</a><a href="facilities.html" class="nav-link text-sm font-medium text-gray-600 hover:text-navy-900">Facilities</a><a href="gallery.html" class="nav-link active text-sm font-medium text-navy-900">Gallery</a><a href="contact.html" class="px-5 py-2 bg-emerald-500 text-white text-sm font-medium rounded-lg hover:bg-emerald-600 transition">Contact Us</a></div><button id="menuBtn" class="lg:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu"><span class="w-6 h-0.5 bg-navy-900"></span><span class="w-6 h-0.5 bg-navy-900"></span><span class="w-6 h-0.5 bg-navy-900"></span></button></div></div></nav>
+  <div id="backdrop" class="backdrop-overlay fixed inset-0 bg-black/50 z-40 lg:hidden" onclick="toggleMenu()"></div>
+  <div id="mobileMenu" class="mobile-menu fixed top-0 right-0 w-72 h-full bg-white z-50 shadow-2xl lg:hidden"><div class="p-6"><div class="flex justify-between items-center mb-8"><span class="font-bold text-navy-900">Menu</span><button onclick="toggleMenu()" class="text-2xl text-gray-500">&times;</button></div><div class="flex flex-col gap-4"><a href="index.html" class="text-gray-600 font-medium py-2 border-b border-gray-100">Home</a><a href="about.html" class="text-gray-600 font-medium py-2 border-b border-gray-100">About Us</a><a href="departments.html" class="text-gray-600 font-medium py-2 border-b border-gray-100">Departments</a><a href="admissions.html" class="text-gray-600 font-medium py-2 border-b border-gray-100">Admissions</a><a href="facilities.html" class="text-gray-600 font-medium py-2 border-b border-gray-100">Facilities</a><a href="gallery.html" class="text-navy-900 font-medium py-2 border-b border-gray-100">Gallery</a><a href="contact.html" class="mt-2 text-center py-3 bg-emerald-500 text-white rounded-lg font-medium">Contact Us</a></div></div></div>
+
+  <!-- Page Header -->
+  <section class="relative py-20 md:py-28 bg-navy-900 overflow-hidden">
+    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c476?w=1920&q=80" alt="Campus" class="absolute inset-0 w-full h-full object-cover opacity-20">
+    <div class="relative z-10 max-w-7xl mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-5xl font-black text-white mb-4">Photo Gallery</h2>
+      <p class="text-gray-300 max-w-2xl mx-auto">A glimpse into campus life, events, and facilities at Guru Daksh Govt. Polytechnic</p>
+    </div>
+  </section>
+
+  <!-- Filter Tabs -->
+  <section class="py-8 border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 flex flex-wrap gap-3 justify-center">
+      <button class="filter-btn active px-5 py-2 bg-navy-900 text-white text-sm font-medium rounded-full transition" data-filter="all">All</button>
+      <button class="filter-btn px-5 py-2 bg-gray-100 text-gray-600 text-sm font-medium rounded-full hover:bg-gray-200 transition" data-filter="campus">Campus</button>
+      <button class="filter-btn px-5 py-2 bg-gray-100 text-gray-600 text-sm font-medium rounded-full hover:bg-gray-200 transition" data-filter="labs">Labs & Workshops</button>
+      <button class="filter-btn px-5 py-2 bg-gray-100 text-gray-600 text-sm font-medium rounded-full hover:bg-gray-200 transition" data-filter="events">Events</button>
+      <button class="filter-btn px-5 py-2 bg-gray-100 text-gray-600 text-sm font-medium rounded-full hover:bg-gray-200 transition" data-filter="sports">Sports</button>
+    </div>
+  </section>
+
+  <!-- Gallery Grid -->
+  <section class="py-12 md:py-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="masonry" id="galleryGrid">
+
+        <div class="gallery-item fade-in" data-category="campus" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=600&q=80" alt="Main Building" class="w-full rounded-xl">
+          <div class="mt-2 px-1"><p class="text-sm font-medium text-navy-900">Main Academic Block</p><p class="text-xs text-gray-400">Campus</p></div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="labs" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&q=80" alt="Computer Lab" class="w-full rounded-xl">
+          <div class="mt-2 px-1"><p class="text-sm font-medium text-navy-900">Computer Laboratory</p><p class="text-xs text-gray-400">Labs & Workshops</p></div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="campus" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?w=600&q=80" alt="Green Campus" class="w-full rounded-xl">
+          <div class="mt-2 px-1"><p class="text-sm font-medium text-navy-900">Green Campus Pathway</p><p class="text-xs text-gray-400">Campus</p></div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="events" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80" alt="Seminar" class="w-full rounded-xl">
+          <div class="mt-2 px-1"><p class="text-sm font-medium text-navy-900">Technical Seminar Hall</p><p class="text-xs text-gray-400">Events</p></div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="labs" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&q=80" alt="Coding Lab" class="w-full rounded-xl">
+          <div class="mt-2 px-1"><p class="text-sm font-medium text-navy-900">Programming Lab</p><p class="text-xs text-gray-400">Labs & Workshops</p></div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="sports" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1461896836934-bd45ba688b0f?w=600&q=80" alt="Sports" class="w-full rounded-xl">
+          <div class="mt-2 px-1"><p class="text-sm font-medium text-navy-900">Sports Ground</p><p class="text-xs text-gray-400">Sports</p></div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="campus" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=600&q=80" alt="Library" class="w-full rounded-xl">
+          <div class="mt-2 px-1"><p class="text-sm font-medium text-navy-900">Central Library</p><p class="text-xs text-gray-400">Campus</p></div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="labs" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80" alt="Workshop" class="w-full rounded-xl">
+          <div class="mt-2 px-1"><p class="text-sm font-medium text-navy-900">Mechanical Workshop</p><p class="text-xs text-gray-400">Labs & Workshops</p></div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="events" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&q=80" alt="Group Study" class="w-full rounded-xl">
+          <div class="mt-2 px-1"><p class="text-sm font-medium text-navy-900">Student Group Discussion</p><p class="text-xs text-gray-400">Events</p></div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="campus" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&q=80" alt="Classroom" class="w-full rounded-xl">
+          <div class="mt-2 px-1"><p class="text-sm font-medium text-navy-900">Smart Classroom</p><p class="text-xs text-gray-400">Campus</p></div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="events" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1523050854058-8df90110c476?w=600&q=80" alt="Annual Day" class="w-full rounded-xl">
+          <div class="mt-2 px-1"><p class="text-sm font-medium text-navy-900">Annual Day Celebration</p><p class="text-xs text-gray-400">Events</p></div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="sports" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=600&q=80" alt="Basketball" class="w-full rounded-xl">
+          <div class="mt-2 px-1"><p class="text-sm font-medium text-navy-900">Basketball Court</p><p class="text-xs text-gray-400">Sports</p></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox fixed inset-0 bg-black/90 z-[100] flex items-center justify-center p-4" onclick="closeLightbox(event)">
+    <button onclick="closeLightbox(event)" class="absolute top-4 right-4 w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center text-white text-xl transition z-10">&times;</button>
+    <button id="prevBtn" onclick="navigateLightbox(-1, event)" class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center text-white text-2xl transition">‹</button>
+    <button id="nextBtn" onclick="navigateLightbox(1, event)" class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center text-white text-2xl transition">›</button>
+    <div class="text-center">
+      <img id="lightboxImg" src="" alt="" class="max-h-[80vh] max-w-[90vw] object-contain rounded-xl shadow-2xl">
+      <p id="lightboxCaption" class="text-white mt-4 text-sm font-medium"></p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-navy-900 text-gray-400 pt-16 pb-6">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-10 mb-12">
+        <div><div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center text-white font-bold text-sm">GP</div><div><h4 class="text-white font-bold text-sm">Guru Daksh Govt. Polytechnic</h4><p class="text-xs text-gray-500">Hisar, Haryana</p></div></div><p class="text-sm leading-relaxed">A premier government polytechnic under Dept. of Technical Education, Haryana.</p></div>
+        <div><h4 class="text-white font-semibold mb-4">Quick Links</h4><div class="flex flex-col gap-2 text-sm"><a href="about.html" class="hover:text-emerald-400 transition">About Us</a><a href="departments.html" class="hover:text-emerald-400 transition">Departments</a><a href="admissions.html" class="hover:text-emerald-400 transition">Admissions</a><a href="facilities.html" class="hover:text-emerald-400 transition">Facilities</a><a href="gallery.html" class="hover:text-emerald-400 transition">Gallery</a></div></div>
+        <div><h4 class="text-white font-semibold mb-4">Contact Info</h4><div class="flex flex-col gap-2 text-sm"><p>📍 Delhi Road, Hisar - 125001</p><p>📞 +91-1662-277460</p><p>📧 gphisar@gphisar.ac.in</p></div></div>
+        <div><h4 class="text-white font-semibold mb-4">Important Links</h4><div class="flex flex-col gap-2 text-sm"><a href="#" class="hover:text-emerald-400 transition">AICTE</a><a href="#" class="hover:text-emerald-400 transition">HSBTE</a><a href="#" class="hover:text-emerald-400 transition">DTE Haryana</a><a href="#" class="hover:text-emerald-400 transition">Haryana Govt.</a></div></div>
+      </div>
+      <div class="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm"><p>© 2026 Guru Daksh Govt. Polytechnic, Hisar. All rights reserved.</p><p>Under Department of Technical Education, <span class="text-saffron-500">Government of Haryana</span></p></div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');document.getElementById('backdrop').classList.toggle('open');document.body.classList.toggle('overflow-hidden')}
+    document.getElementById('menuBtn').addEventListener('click',toggleMenu);
+    window.addEventListener('scroll',()=>{document.getElementById('navbar').classList.toggle('shadow-lg',window.scrollY>50)});
+
+    // Fade-in
+    const observer=new IntersectionObserver(e=>{e.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')})},{threshold:.1});
+    document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
+
+    // Filter
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const items = document.querySelectorAll('.gallery-item');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => { b.classList.remove('active','bg-navy-900','text-white'); b.classList.add('bg-gray-100','text-gray-600'); });
+        btn.classList.add('active','bg-navy-900','text-white'); btn.classList.remove('bg-gray-100','text-gray-600');
+        const filter = btn.dataset.filter;
+        items.forEach(item => {
+          if (filter === 'all' || item.dataset.category === filter) { item.style.display = ''; }
+          else { item.style.display = 'none'; }
+        });
+      });
+    });
+
+    // Lightbox
+    let currentIndex = 0;
+    let visibleItems = [];
+
+    function getVisibleItems() {
+      return [...document.querySelectorAll('.gallery-item')].filter(i => i.style.display !== 'none');
+    }
+
+    function openLightbox(el) {
+      visibleItems = getVisibleItems();
+      currentIndex = visibleItems.indexOf(el);
+      const img = el.querySelector('img');
+      const caption = el.querySelector('p');
+      document.getElementById('lightboxImg').src = img.src.replace('w=600','w=1200');
+      document.getElementById('lightboxCaption').textContent = caption ? caption.textContent : '';
+      document.getElementById('lightbox').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox(e) {
+      if (e.target === document.getElementById('lightbox') || e.currentTarget.tagName === 'BUTTON') {
+        document.getElementById('lightbox').classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    }
+
+    function navigateLightbox(dir, e) {
+      e.stopPropagation();
+      visibleItems = getVisibleItems();
+      currentIndex = (currentIndex + dir + visibleItems.length) % visibleItems.length;
+      const item = visibleItems[currentIndex];
+      const img = item.querySelector('img');
+      const caption = item.querySelector('p');
+      document.getElementById('lightboxImg').src = img.src.replace('w=600','w=1200');
+      document.getElementById('lightboxCaption').textContent = caption ? caption.textContent : '';
+    }
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (!document.getElementById('lightbox').classList.contains('active')) return;
+      if (e.key === 'Escape') { document.getElementById('lightbox').classList.remove('active'); document.body.style.overflow = ''; }
+      if (e.key === 'ArrowLeft') navigateLightbox(-1, e);
+      if (e.key === 'ArrowRight') navigateLightbox(1, e);
+    });
+  </script>
+</body>
+</html>
