@@ -1,170 +1,369 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Facilities - Guru Daksh Government Polytechnic, Hisar</title>
-  <meta name="description" content="Explore world-class facilities at Guru Daksh Government Polytechnic Hisar - Labs, Hostels, Library, Smart Classrooms, Sports Ground.">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>tailwind.config={theme:{extend:{colors:{navy:{900:'#0F172A',800:'#1E293B',700:'#334155'},emerald:{500:'#10B981',600:'#059669'},saffron:{500:'#F97316',400:'#FB923C'}}}}}</script>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-    *{font-family:'Inter',system-ui,sans-serif;scroll-behavior:smooth}
-    .nav-link{position:relative}.nav-link::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:2px;background:#10B981;transition:width .3s}.nav-link:hover::after,.nav-link.active::after{width:100%}
-    .card-hover{transition:all .3s ease}.card-hover:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(0,0,0,.1)}
-    .fade-in{opacity:0;transform:translateY(20px);transition:all .6s ease}.fade-in.visible{opacity:1;transform:translateY(0)}
-    .mobile-menu{transform:translateX(100%);transition:transform .3s ease}.mobile-menu.open{transform:translateX(0)}
-    .backdrop{opacity:0;visibility:hidden;transition:all .3s}.backdrop.open{opacity:1;visibility:visible}
-  </style>
-</head>
-<body class="bg-white text-gray-800">
-  <div class="bg-navy-900 text-white text-xs py-1.5 hidden md:block"><div class="max-w-7xl mx-auto px-4 flex justify-between items-center"><span>📧 gphisar@gphisar.ac.in | 📞 +91-1662-277460</span><span>Under Dept. of Technical Education, Haryana</span></div></div>
-  <nav id="navbar" class="bg-white/95 backdrop-blur-md sticky top-0 z-50 shadow-sm"><div class="max-w-7xl mx-auto px-4"><div class="flex items-center justify-between h-16 md:h-20"><a href="index.html" class="flex items-center gap-3 shrink-0"><div class="w-10 h-10 md:w-12 md:h-12 bg-navy-900 rounded-full flex items-center justify-center text-white font-bold text-sm md:text-base">GP</div><div><h1 class="text-sm md:text-base font-bold text-navy-900 leading-tight">Guru Daksh Govt. Polytechnic</h1><p class="text-[10px] md:text-xs text-gray-500">Hisar, Haryana | Est. 1992</p></div></a><div class="hidden lg:flex items-center gap-6"><a href="index.html" class="nav-link text-sm font-medium text-gray-600 hover:text-navy-900">Home</a><a href="about.html" class="nav-link text-sm font-medium text-gray-600 hover:text-navy-900">About Us</a><a href="departments.html" class="nav-link text-sm font-medium text-gray-600 hover:text-navy-900">Departments</a><a href="admissions.html" class="nav-link text-sm font-medium text-gray-600 hover:text-navy-900">Admissions</a><a href="facilities.html" class="nav-link active text-sm font-medium text-navy-900">Facilities</a><a href="gallery.html" class="nav-link text-sm font-medium text-gray-600 hover:text-navy-900">Gallery</a><a href="contact.html" class="px-5 py-2 bg-emerald-500 text-white text-sm font-medium rounded-lg hover:bg-emerald-600 transition">Contact Us</a></div><button id="menuBtn" class="lg:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu"><span class="w-6 h-0.5 bg-navy-900"></span><span class="w-6 h-0.5 bg-navy-900"></span><span class="w-6 h-0.5 bg-navy-900"></span></button></div></div></nav>
-  <div id="backdrop" class="backdrop fixed inset-0 bg-black/50 z-40 lg:hidden" onclick="toggleMenu()"></div>
-  <div id="mobileMenu" class="mobile-menu fixed top-0 right-0 w-72 h-full bg-white z-50 shadow-2xl lg:hidden"><div class="p-6"><div class="flex justify-between items-center mb-8"><span class="font-bold text-navy-900">Menu</span><button onclick="toggleMenu()" class="text-2xl text-gray-500">&times;</button></div><div class="flex flex-col gap-4"><a href="index.html" class="text-gray-600 font-medium py-2 border-b border-gray-100">Home</a><a href="about.html" class="text-gray-600 font-medium py-2 border-b border-gray-100">About Us</a><a href="departments.html" class="text-gray-600 font-medium py-2 border-b border-gray-100">Departments</a><a href="admissions.html" class="text-gray-600 font-medium py-2 border-b border-gray-100">Admissions</a><a href="facilities.html" class="text-navy-900 font-medium py-2 border-b border-gray-100">Facilities</a><a href="gallery.html" class="text-gray-600 font-medium py-2 border-b border-gray-100">Gallery</a><a href="contact.html" class="mt-2 text-center py-3 bg-emerald-500 text-white rounded-lg font-medium">Contact Us</a></div></div></div>
-
-  <!-- Page Header -->
-  <section class="relative py-20 md:py-28 bg-navy-900 overflow-hidden">
-    <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=1920&q=80" alt="Campus" class="absolute inset-0 w-full h-full object-cover opacity-20">
-    <div class="relative z-10 max-w-7xl mx-auto px-4 text-center">
-      <h2 class="text-3xl md:text-5xl font-black text-white mb-4">Our Facilities</h2>
-      <p class="text-gray-300 max-w-2xl mx-auto">World-class infrastructure for a complete learning experience</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facilities - Guru Daksh Government Polytechnic, Hisar</title>
+    <meta
+      name="description"
+      content="Facilities at Guru Daksh Government Polytechnic Hisar - Labs, Hostels, Library, Classrooms, Sports."
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              navy: { 900: "#0F172A", 800: "#1E293B", 700: "#334155" },
+              emerald: { 500: "#10B981", 600: "#059669" },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+      * {
+        font-family: "Inter", system-ui, sans-serif;
+        scroll-behavior: smooth;
+      }
+      .mobile-menu {
+        transform: translateX(100%);
+        transition: transform 0.3s;
+      }
+      .mobile-menu.open {
+        transform: translateX(0);
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- Top Bar -->
+    <div class="bg-navy-900 text-white text-xs py-1.5 hidden md:block">
+      <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+        <span
+          >Email: gphisar@gphisar.ac.in &nbsp;|&nbsp; Phone:
+          +91-1662-277460</span
+        >
+        <span>Under Dept. of Technical Education, Haryana</span>
+      </div>
     </div>
-  </section>
 
-  <!-- Facilities -->
-  <section class="py-16 md:py-24">
-    <div class="max-w-7xl mx-auto px-4 space-y-12">
-
-      <!-- Labs -->
-      <div class="grid md:grid-cols-2 gap-8 items-center fade-in">
-        <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&q=80" alt="Labs" class="w-full rounded-2xl shadow-lg">
-        <div>
-          <div class="text-3xl mb-3">🔬</div>
-          <h3 class="text-2xl font-bold text-navy-900 mb-4">Laboratories & Workshops</h3>
-          <p class="text-gray-600 leading-relaxed mb-4">Our institute houses 40+ well-equipped laboratories and workshops across all departments. From computer labs with 300+ systems to mechanical workshops with CNC machines, every facility is designed to provide hands-on learning experience.</p>
-          <ul class="text-gray-500 text-sm space-y-2">
-            <li class="flex gap-2"><span class="text-emerald-500">✓</span> Computer Labs with latest hardware & software</li>
-            <li class="flex gap-2"><span class="text-emerald-500">✓</span> Electronics & Communication Lab</li>
-            <li class="flex gap-2"><span class="text-emerald-500">✓</span> Mechanical Workshop with CNC, Lathe, Welding</li>
-            <li class="flex gap-2"><span class="text-emerald-500">✓</span> Civil Engineering Survey & Material Testing Lab</li>
-            <li class="flex gap-2"><span class="text-emerald-500">✓</span> Electrical Machines & Power Systems Lab</li>
-          </ul>
+    <!-- Navigation -->
+    <nav class="bg-white sticky top-0 z-50 shadow-md">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex items-center justify-between h-16">
+          <a href="index.html" class="flex items-center gap-3">
+            <div
+              class="w-10 h-10 bg-navy-900 rounded-full flex items-center justify-center text-white font-bold text-sm"
+            >
+              GP
+            </div>
+            <div>
+              <h1 class="text-sm font-bold text-navy-900 leading-tight">
+                Guru Daksh Govt. Polytechnic
+              </h1>
+              <p class="text-[10px] text-gray-500">
+                Hisar, Haryana | Est. 1992
+              </p>
+            </div>
+          </a>
+          <div class="hidden lg:flex items-center gap-6">
+            <a
+              href="index.html"
+              class="text-sm font-medium text-gray-500 hover:text-navy-900"
+              >Home</a
+            >
+            <a
+              href="about.html"
+              class="text-sm font-medium text-gray-500 hover:text-navy-900"
+              >About Us</a
+            >
+            <a
+              href="departments.html"
+              class="text-sm font-medium text-gray-500 hover:text-navy-900"
+              >Departments</a
+            >
+            <a
+              href="admissions.html"
+              class="text-sm font-medium text-gray-500 hover:text-navy-900"
+              >Admissions</a
+            >
+            <a
+              href="facilities.html"
+              class="text-sm font-semibold text-navy-900"
+              >Facilities</a
+            >
+            <a
+              href="gallery.html"
+              class="text-sm font-medium text-gray-500 hover:text-navy-900"
+              >Gallery</a
+            >
+            <a
+              href="contact.html"
+              class="px-4 py-2 bg-emerald-500 text-white text-sm font-medium rounded-lg hover:bg-emerald-600 transition"
+              >Contact Us</a
+            >
+          </div>
+          <button id="menuBtn" class="lg:hidden p-2" aria-label="Toggle menu">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
         </div>
       </div>
+    </nav>
 
-      <hr class="border-gray-100">
-
-      <!-- Hostels -->
-      <div class="grid md:grid-cols-2 gap-8 items-center fade-in">
-        <div class="order-2 md:order-1">
-          <div class="text-3xl mb-3">🏨</div>
-          <h3 class="text-2xl font-bold text-navy-900 mb-4">Hostel Accommodation</h3>
-          <p class="text-gray-600 leading-relaxed mb-4">Separate hostel facilities for boys and girls with a total capacity of 500+ students. Hostels are located within the campus premises, ensuring safety and convenience. Mess facility, hot water, and Wi-Fi are available.</p>
-          <ul class="text-gray-500 text-sm space-y-2">
-            <li class="flex gap-2"><span class="text-emerald-500">✓</span> Separate Boys & Girls Hostels</li>
-            <li class="flex gap-2"><span class="text-emerald-500">✓</span> 24/7 Security with CCTV</li>
-            <li class="flex gap-2"><span class="text-emerald-500">✓</span> Mess with nutritious meals</li>
-            <li class="flex gap-2"><span class="text-emerald-500">✓</span> Wi-Fi connectivity</li>
-            <li class="flex gap-2"><span class="text-emerald-500">✓</span> Common room with TV & indoor games</li>
-          </ul>
+    <!-- Mobile Menu -->
+    <div
+      id="menuOverlay"
+      class="fixed inset-0 bg-black/50 z-40 hidden lg:hidden"
+      onclick="toggleMenu()"
+    ></div>
+    <div
+      id="mobileMenu"
+      class="mobile-menu fixed top-0 right-0 w-72 h-full bg-white z-50 shadow-2xl lg:hidden"
+    >
+      <div class="p-6">
+        <div class="flex justify-between items-center mb-8">
+          <span class="font-bold text-navy-900">Menu</span>
+          <button onclick="toggleMenu()" class="text-2xl text-gray-400">
+            &times;
+          </button>
         </div>
-        <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=600&q=80" alt="Hostel" class="w-full rounded-2xl shadow-lg order-1 md:order-2">
-      </div>
-
-      <hr class="border-gray-100">
-
-      <!-- Library -->
-      <div class="grid md:grid-cols-2 gap-8 items-center fade-in">
-        <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=600&q=80" alt="Library" class="w-full rounded-2xl shadow-lg">
-        <div>
-          <div class="text-3xl mb-3">📚</div>
-          <h3 class="text-2xl font-bold text-navy-900 mb-4">Central Library</h3>
-          <p class="text-gray-600 leading-relaxed mb-4">A well-stocked central library with over 500 books, journals, and digital resources. The library provides a peaceful environment for study and research, equipped with a digital section for e-learning.</p>
-          <ul class="text-gray-500 text-sm space-y-2">
-            <li class="flex gap-2"><span class="text-emerald-500">✓</span> 500+ Books & Reference Material</li>
-            <li class="flex gap-2"><span class="text-emerald-500">✓</span> Digital Library with e-Journals</li>
-            
-          </ul>
-        </div>
-      </div>
-
-      <hr class="border-gray-100">
-
-      <!-- Smart Classrooms -->
-      <div class="grid md:grid-cols-2 gap-8 items-center fade-in">
-        <div class="order-2 md:order-1">
-          <div class="text-3xl mb-3">🖥️</div>
-          <h3 class="text-2xl font-bold text-navy-900 mb-4">Smart Classrooms</h3>
-          <p class="text-gray-600 leading-relaxed mb-4">ICT-enabled smart classrooms equipped with projectors, digital boards, and audio-visual systems for interactive learning. These modern facilities enhance the teaching-learning process significantly.</p>
-          <ul class="text-gray-500 text-sm space-y-2">
-            <li class="flex gap-2"><span class="text-emerald-500">✓</span> 10+ Smart Classrooms</li>
-            <li class="flex gap-2"><span class="text-emerald-500">✓</span> HD Projectors & Digital Boards</li>
-            <li class="flex gap-2"><span class="text-emerald-500">✓</span> Audio-Visual systems</li>
-            <li class="flex gap-2"><span class="text-emerald-500">✓</span> High-speed internet connectivity</li>
-          </ul>
-        </div>
-        <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&q=80" alt="Classroom" class="w-full rounded-2xl shadow-lg order-1 md:order-2">
-      </div>
-
-      <hr class="border-gray-100">
-
-      <!-- Sports -->
-      <div class="grid md:grid-cols-2 gap-8 items-center fade-in">
-        <img src="https://images.unsplash.com/photo-1461896836934-bd45ba688b0f?w=600&q=80" alt="Sports" class="w-full rounded-2xl shadow-lg">
-        <div>
-          <div class="text-3xl mb-3">🏟️</div>
-          <h3 class="text-2xl font-bold text-navy-900 mb-4">Sports Complex</h3>
-          <p class="text-gray-600 leading-relaxed mb-4">A sprawling multi-sport complex with facilities for cricket, football, basketball, volleyball, badminton, and athletics. Regular inter-college tournaments and sports events are organized to promote fitness and team spirit.</p>
-          <ul class="text-gray-500 text-sm space-y-2">
-            <li class="flex gap-2"><span class="text-emerald-500">✓</span> Cricket, Football & Hockey Grounds</li>
-            <li class="flex gap-2"><span class="text-emerald-500">✓</span> Basketball & Volleyball Courts</li>
-            <li class="flex gap-2"><span class="text-emerald-500">✓</span> Indoor Badminton & Table Tennis</li>
-            <li class="flex gap-2"><span class="text-emerald-500">✓</span> Athletic Track & Gymnasium</li>
-          </ul>
+        <div class="flex flex-col gap-1">
+          <a
+            href="index.html"
+            class="py-3 px-3 rounded-lg text-gray-600 hover:bg-gray-50"
+            >Home</a
+          >
+          <a
+            href="about.html"
+            class="py-3 px-3 rounded-lg text-gray-600 hover:bg-gray-50"
+            >About Us</a
+          >
+          <a
+            href="departments.html"
+            class="py-3 px-3 rounded-lg text-gray-600 hover:bg-gray-50"
+            >Departments</a
+          >
+          <a
+            href="admissions.html"
+            class="py-3 px-3 rounded-lg text-gray-600 hover:bg-gray-50"
+            >Admissions</a
+          >
+          <a
+            href="facilities.html"
+            class="py-3 px-3 rounded-lg bg-emerald-50 text-navy-900 font-semibold"
+            >Facilities</a
+          >
+          <a
+            href="gallery.html"
+            class="py-3 px-3 rounded-lg text-gray-600 hover:bg-gray-50"
+            >Gallery</a
+          >
+          <a
+            href="contact.html"
+            class="mt-3 py-3 text-center bg-emerald-500 text-white rounded-lg font-medium"
+            >Contact Us</a
+          >
         </div>
       </div>
-
-      <hr class="border-gray-100">
-
-      <!-- Other -->
-      <div class="grid md:grid-cols-2 gap-8 items-center fade-in">
-        <div class="order-2 md:order-1">
-          <div class="text-3xl mb-3">🌳</div>
-          <h3 class="text-2xl font-bold text-navy-900 mb-4">Green Campus & Other Facilities</h3>
-          <p class="text-gray-600 leading-relaxed mb-4">Our 40-acre eco-friendly campus features lush gardens, tree-lined pathways, canteen, medical room, bank ATM, and ample parking. Solar panels and rainwater harvesting make it a sustainable campus.</p>
-          <ul class="text-gray-500 text-sm space-y-2">
-            <li class="flex gap-2"><span class="text-emerald-500">✓</span> Canteen with affordable meals</li>
-            <li class="flex gap-2"><span class="text-emerald-500">✓</span> Medical room with first-aid</li>
-            <li class="flex gap-2"><span class="text-emerald-500">✓</span> Bank ATM on campus</li>
-            <li class="flex gap-2"><span class="text-emerald-500">✓</span> Solar-powered & rainwater harvesting</li>
-            <li class="flex gap-2"><span class="text-emerald-500">✓</span> Ample parking for 500+ vehicles</li>
-          </ul>
-        </div>
-        <img src="https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?w=600&q=80" alt="Campus" class="w-full rounded-2xl shadow-lg order-1 md:order-2">
-      </div>
-
     </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="bg-navy-900 text-gray-400 pt-16 pb-6">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="grid md:grid-cols-4 gap-10 mb-12">
-        <div><div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center text-white font-bold text-sm">GP</div><div><h4 class="text-white font-bold text-sm">Guru Daksh Govt. Polytechnic</h4><p class="text-xs text-gray-500">Hisar, Haryana</p></div></div><p class="text-sm leading-relaxed">A premier government polytechnic under Dept. of Technical Education, Haryana.</p></div>
-        <div><h4 class="text-white font-semibold mb-4">Quick Links</h4><div class="flex flex-col gap-2 text-sm"><a href="about.html" class="hover:text-emerald-400 transition">About Us</a><a href="departments.html" class="hover:text-emerald-400 transition">Departments</a><a href="admissions.html" class="hover:text-emerald-400 transition">Admissions</a><a href="facilities.html" class="hover:text-emerald-400 transition">Facilities</a><a href="gallery.html" class="hover:text-emerald-400 transition">Gallery</a></div></div>
-        <div><h4 class="text-white font-semibold mb-4">Contact Info</h4><div class="flex flex-col gap-2 text-sm"><p>📍 Delhi Road, Hisar - 125001</p><p>📞 +91-1662-277460</p><p>📧 gphisar@gphisar.ac.in</p></div></div>
-        <div><h4 class="text-white font-semibold mb-4">Important Links</h4><div class="flex flex-col gap-2 text-sm"><a href="#" class="hover:text-emerald-400 transition">AICTE</a><a href="#" class="hover:text-emerald-400 transition">HSBTE</a><a href="#" class="hover:text-emerald-400 transition">DTE Haryana</a><a href="#" class="hover:text-emerald-400 transition">Haryana Govt.</a></div></div>
+    <!-- Page Header -->
+    <section class="bg-navy-900 text-white py-12 md:py-16">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-extrabold mb-2">Facilities</h2>
+        <p class="text-gray-300 max-w-xl mx-auto">
+          Infrastructure available at GP Hisar
+        </p>
       </div>
-      <div class="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm"><p>© 2026 Guru Daksh Govt. Polytechnic, Hisar. All rights reserved.</p><p>Under Department of Technical Education, <span class="text-saffron-500">Government of Haryana</span></p></div>
-    </div>
-  </footer>
-  <script>
-    function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');document.getElementById('backdrop').classList.toggle('open');document.body.classList.toggle('overflow-hidden')}
-    document.getElementById('menuBtn').addEventListener('click',toggleMenu);
-    window.addEventListener('scroll',()=>{document.getElementById('navbar').classList.toggle('shadow-lg',window.scrollY>50)});
-    const observer=new IntersectionObserver(e=>{e.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')})},{threshold:.1});
-    document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
-  </script>
-</body>
+    </section>
+
+    <!-- Facilities -->
+    <section class="py-12 md:py-16">
+      <div class="max-w-6xl mx-auto px-4 space-y-5">
+        <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+          <h3 class="text-lg font-bold text-navy-900 mb-2">
+            Laboratories & Workshops
+          </h3>
+          <p class="text-sm text-gray-600 mb-3">
+            40+ well-equipped laboratories and workshops across all departments.
+            Computer labs with 300+ systems, mechanical workshops with CNC
+            machines.
+          </p>
+          <ul class="text-sm text-gray-500 space-y-1.5">
+            <li class="flex gap-2">
+              <span class="text-emerald-500 font-bold">&#10003;</span> Computer
+              Labs with latest hardware & software
+            </li>
+            <li class="flex gap-2">
+              <span class="text-emerald-500 font-bold">&#10003;</span>
+              Electronics & Communication Lab
+            </li>
+            <li class="flex gap-2">
+              <span class="text-emerald-500 font-bold">&#10003;</span>
+              Mechanical Workshop with CNC, Lathe, Welding
+            </li>
+            <li class="flex gap-2">
+              <span class="text-emerald-500 font-bold">&#10003;</span> Civil
+              Engineering Survey & Material Testing Lab
+            </li>
+            <li class="flex gap-2">
+              <span class="text-emerald-500 font-bold">&#10003;</span>
+              Electrical Machines & Power Systems Lab
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+          <h3 class="text-lg font-bold text-navy-900 mb-2">
+            Hostel Accommodation
+          </h3>
+          <p class="text-sm text-gray-600 mb-3">
+            Separate hostel facilities for boys and girls with capacity of 500+
+            students. Located within campus premises.
+          </p>
+          <ul class="text-sm text-gray-500 space-y-1.5">
+            <li class="flex gap-2">
+              <span class="text-emerald-500 font-bold">&#10003;</span> Separate
+              Boys & Girls Hostels
+            </li>
+            <li class="flex gap-2">
+              <span class="text-emerald-500 font-bold">&#10003;</span> 24/7
+              Security with CCTV
+            </li>
+            <li class="flex gap-2">
+              <span class="text-emerald-500 font-bold">&#10003;</span> Mess with
+              nutritious meals
+            </li>
+            <li class="flex gap-2">
+              <span class="text-emerald-500 font-bold">&#10003;</span> Wi-Fi
+              connectivity
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+          <h3 class="text-lg font-bold text-navy-900 mb-2">Central Library</h3>
+          <p class="text-sm text-gray-600 mb-3">
+            Well-stocked central library with books, journals, and digital
+            resources.
+          </p>
+          <ul class="text-sm text-gray-500 space-y-1.5">
+            <li class="flex gap-2">
+              <span class="text-emerald-500 font-bold">&#10003;</span> 500+
+              Books & Reference Material
+            </li>
+            <li class="flex gap-2">
+              <span class="text-emerald-500 font-bold">&#10003;</span> Digital
+              Library with e-Journals
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-900 text-gray-400 pt-12 pb-6">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="grid md:grid-cols-4 gap-8 mb-10">
+          <div>
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-9 h-9 bg-emerald-500 rounded-full flex items-center justify-center text-white font-bold text-sm"
+              >
+                GP
+              </div>
+              <div>
+                <h4 class="text-white font-bold text-sm">
+                  Guru Daksh Govt. Polytechnic
+                </h4>
+                <p class="text-xs text-gray-500">Hisar, Haryana</p>
+              </div>
+            </div>
+            <p class="text-sm leading-relaxed">
+              A government polytechnic under Dept. of Technical Education,
+              Haryana.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-white font-semibold mb-3">Quick Links</h4>
+            <div class="flex flex-col gap-2 text-sm">
+              <a href="about.html" class="hover:text-emerald-400 transition"
+                >About Us</a
+              >
+              <a
+                href="departments.html"
+                class="hover:text-emerald-400 transition"
+                >Departments</a
+              >
+              <a
+                href="admissions.html"
+                class="hover:text-emerald-400 transition"
+                >Admissions</a
+              >
+              <a
+                href="facilities.html"
+                class="hover:text-emerald-400 transition"
+                >Facilities</a
+              >
+              <a href="gallery.html" class="hover:text-emerald-400 transition"
+                >Gallery</a
+              >
+            </div>
+          </div>
+          <div>
+            <h4 class="text-white font-semibold mb-3">Contact Info</h4>
+            <div class="flex flex-col gap-2 text-sm">
+              <p>Delhi Road, Hisar - 125001</p>
+              <p>Phone: +91-1662-277460</p>
+              <p>Email: gphisar@gphisar.ac.in</p>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-white font-semibold mb-3">Important Links</h4>
+            <div class="flex flex-col gap-2 text-sm">
+              <a href="#" class="hover:text-emerald-400 transition">AICTE</a>
+              <a href="#" class="hover:text-emerald-400 transition">HSBTE</a>
+              <a href="#" class="hover:text-emerald-400 transition"
+                >DTE Haryana</a
+              >
+              <a href="#" class="hover:text-emerald-400 transition"
+                >Haryana Govt.</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-white/10 pt-5 flex flex-col md:flex-row justify-between items-center gap-3 text-sm"
+        >
+          <p>
+            &copy; 2026 Guru Daksh Govt. Polytechnic, Hisar. All rights
+            reserved.
+          </p>
+          <p>Under Department of Technical Education, Government of Haryana</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("mobileMenu").classList.toggle("open");
+        document.getElementById("menuOverlay").classList.toggle("hidden");
+        document.body.classList.toggle("overflow-hidden");
+      }
+      document.getElementById("menuBtn").addEventListener("click", toggleMenu);
+    </script>
+  </body>
 </html>
