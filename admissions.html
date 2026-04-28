@@ -1,270 +1,615 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admissions 2026-27 - Guru Daksh Government Polytechnic, Hisar</title>
-  <meta name="description" content="Admission process, eligibility, important dates for diploma programs at Guru Daksh Government Polytechnic Hisar.">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = { theme: { extend: { colors: { navy: { 900: '#0F172A', 800: '#1E293B', 700: '#334155' }, emerald: { 500: '#10B981', 600: '#059669' } } } } }
-  </script>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-    * { font-family: 'Inter', system-ui, sans-serif; scroll-behavior: smooth; }
-    .mobile-menu { transform: translateX(100%); transition: transform 0.3s; }
-    .mobile-menu.open { transform: translateX(0); }
-  </style>
-</head>
-<body class="bg-white text-gray-800">
-
-  <!-- Top Bar -->
-  <div class="bg-navy-900 text-white text-xs py-1.5 hidden md:block">
-    <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
-      <span>Email: gphisar@gphisar.ac.in &nbsp;|&nbsp; Phone: +91-1662-277460</span>
-      <span>Under Dept. of Technical Education, Haryana</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admissions 2026-27 - Guru Daksh Government Polytechnic, Hisar</title>
+    <meta
+      name="description"
+      content="Admission process, eligibility, important dates for diploma programs at Guru Daksh Government Polytechnic Hisar."
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              navy: { 900: "#0F172A", 800: "#1E293B", 700: "#334155" },
+              emerald: { 500: "#10B981", 600: "#059669" },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+      * {
+        font-family: "Inter", system-ui, sans-serif;
+        scroll-behavior: smooth;
+      }
+      .mobile-menu {
+        transform: translateX(100%);
+        transition: transform 0.3s;
+      }
+      .mobile-menu.open {
+        transform: translateX(0);
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- Top Bar -->
+    <div class="bg-navy-900 text-white text-xs py-1.5 hidden md:block">
+      <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+        <span
+          >Email: gphisar@gphisar.ac.in &nbsp;|&nbsp; Phone:
+          +91-1662-277460</span
+        >
+        <span>Under Dept. of Technical Education, Haryana</span>
+      </div>
     </div>
-  </div>
 
-  <!-- Navigation -->
-  <nav class="bg-white sticky top-0 z-50 shadow-md">
-    <div class="max-w-6xl mx-auto px-4">
-      <div class="flex items-center justify-between h-16">
-        <a href="index.html" class="flex items-center gap-3">
-          <div class="w-10 h-10 bg-navy-900 rounded-full flex items-center justify-center text-white font-bold text-sm">GP</div>
+    <!-- Navigation -->
+    <nav class="bg-white sticky top-0 z-50 shadow-md">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex items-center justify-between h-16">
+          <a href="index.html" class="flex items-center gap-3">
+            <div
+              class="w-10 h-10 bg-navy-900 rounded-full flex items-center justify-center text-white font-bold text-sm"
+            >
+              GP
+            </div>
+            <div>
+              <h1 class="text-sm font-bold text-navy-900 leading-tight">
+                Guru Daksh Govt. Polytechnic
+              </h1>
+              <p class="text-[10px] text-gray-500">
+                Hisar, Haryana | Est. 1992
+              </p>
+            </div>
+          </a>
+          <div class="hidden lg:flex items-center gap-6">
+            <a
+              href="index.html"
+              class="text-sm font-medium text-gray-500 hover:text-navy-900"
+              >Home</a
+            >
+            <a
+              href="about.html"
+              class="text-sm font-medium text-gray-500 hover:text-navy-900"
+              >About Us</a
+            >
+            <a
+              href="departments.html"
+              class="text-sm font-medium text-gray-500 hover:text-navy-900"
+              >Departments</a
+            >
+            <a
+              href="admissions.html"
+              class="text-sm font-semibold text-navy-900"
+              >Admissions</a
+            >
+            <a
+              href="facilities.html"
+              class="text-sm font-medium text-gray-500 hover:text-navy-900"
+              >Facilities</a
+            >
+            <a
+              href="gallery.html"
+              class="text-sm font-medium text-gray-500 hover:text-navy-900"
+              >Gallery</a
+            >
+            <a
+              href="contact.html"
+              class="px-4 py-2 bg-emerald-500 text-white text-sm font-medium rounded-lg hover:bg-emerald-600 transition"
+              >Contact Us</a
+            >
+          </div>
+          <button id="menuBtn" class="lg:hidden p-2" aria-label="Toggle menu">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div
+      id="menuOverlay"
+      class="fixed inset-0 bg-black/50 z-40 hidden lg:hidden"
+      onclick="toggleMenu()"
+    ></div>
+    <div
+      id="mobileMenu"
+      class="mobile-menu fixed top-0 right-0 w-72 h-full bg-white z-50 shadow-2xl lg:hidden"
+    >
+      <div class="p-6">
+        <div class="flex justify-between items-center mb-8">
+          <span class="font-bold text-navy-900">Menu</span>
+          <button onclick="toggleMenu()" class="text-2xl text-gray-400">
+            &times;
+          </button>
+        </div>
+        <div class="flex flex-col gap-1">
+          <a
+            href="index.html"
+            class="py-3 px-3 rounded-lg text-gray-600 hover:bg-gray-50"
+            >Home</a
+          >
+          <a
+            href="about.html"
+            class="py-3 px-3 rounded-lg text-gray-600 hover:bg-gray-50"
+            >About Us</a
+          >
+          <a
+            href="departments.html"
+            class="py-3 px-3 rounded-lg text-gray-600 hover:bg-gray-50"
+            >Departments</a
+          >
+          <a
+            href="admissions.html"
+            class="py-3 px-3 rounded-lg bg-emerald-50 text-navy-900 font-semibold"
+            >Admissions</a
+          >
+          <a
+            href="facilities.html"
+            class="py-3 px-3 rounded-lg text-gray-600 hover:bg-gray-50"
+            >Facilities</a
+          >
+          <a
+            href="gallery.html"
+            class="py-3 px-3 rounded-lg text-gray-600 hover:bg-gray-50"
+            >Gallery</a
+          >
+          <a
+            href="contact.html"
+            class="mt-3 py-3 text-center bg-emerald-500 text-white rounded-lg font-medium"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="bg-navy-900 text-white py-12 md:py-16">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-extrabold mb-2">
+          Admissions 2026-27
+        </h2>
+        <p class="text-gray-300 max-w-xl mx-auto">
+          Apply for diploma programs at GP Hisar
+        </p>
+      </div>
+    </section>
+
+    <!-- Admission Process -->
+    <section class="py-12 md:py-16">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-2xl font-bold text-navy-900 mb-6">Admission Process</h2>
+        <div class="grid md:grid-cols-4 gap-4">
+          <div
+            class="bg-white border border-gray-200 rounded-xl p-5 text-center shadow-sm"
+          >
+            <div
+              class="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center text-white font-bold mx-auto mb-3"
+            >
+              1
+            </div>
+            <h3 class="font-bold text-sm text-navy-900 mb-1">
+              Online Registration
+            </h3>
+            <p class="text-xs text-gray-500">
+              Register on the HSBTE online portal with your 10th class details.
+            </p>
+          </div>
+          <div
+            class="bg-white border border-gray-200 rounded-xl p-5 text-center shadow-sm"
+          >
+            <div
+              class="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center text-white font-bold mx-auto mb-3"
+            >
+              2
+            </div>
+            <h3 class="font-bold text-sm text-navy-900 mb-1">
+              Document Upload
+            </h3>
+            <p class="text-xs text-gray-500">
+              Upload scanned copies of marksheets, certificates, and
+              photographs.
+            </p>
+          </div>
+          <div
+            class="bg-white border border-gray-200 rounded-xl p-5 text-center shadow-sm"
+          >
+            <div
+              class="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center text-white font-bold mx-auto mb-3"
+            >
+              3
+            </div>
+            <h3 class="font-bold text-sm text-navy-900 mb-1">Counselling</h3>
+            <p class="text-xs text-gray-500">
+              Attend state-level counselling by DTE Haryana. Choose your branch.
+            </p>
+          </div>
+          <div
+            class="bg-white border border-gray-200 rounded-xl p-5 text-center shadow-sm"
+          >
+            <div
+              class="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center text-white font-bold mx-auto mb-3"
+            >
+              4
+            </div>
+            <h3 class="font-bold text-sm text-navy-900 mb-1">Fee Payment</h3>
+            <p class="text-xs text-gray-500">
+              Pay semester fee and complete admission formalities at the
+              institute.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Eligibility & Documents -->
+    <section class="py-12 md:py-16 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-6">
           <div>
-            <h1 class="text-sm font-bold text-navy-900 leading-tight">Guru Daksh Govt. Polytechnic</h1>
-            <p class="text-[10px] text-gray-500">Hisar, Haryana | Est. 1992</p>
-          </div>
-        </a>
-        <div class="hidden lg:flex items-center gap-6">
-          <a href="index.html" class="text-sm font-medium text-gray-500 hover:text-navy-900">Home</a>
-          <a href="about.html" class="text-sm font-medium text-gray-500 hover:text-navy-900">About Us</a>
-          <a href="departments.html" class="text-sm font-medium text-gray-500 hover:text-navy-900">Departments</a>
-          <a href="admissions.html" class="text-sm font-semibold text-navy-900">Admissions</a>
-          <a href="facilities.html" class="text-sm font-medium text-gray-500 hover:text-navy-900">Facilities</a>
-          <a href="gallery.html" class="text-sm font-medium text-gray-500 hover:text-navy-900">Gallery</a>
-          <a href="contact.html" class="px-4 py-2 bg-emerald-500 text-white text-sm font-medium rounded-lg hover:bg-emerald-600 transition">Contact Us</a>
-        </div>
-        <button id="menuBtn" class="lg:hidden p-2" aria-label="Toggle menu">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
-        </button>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Mobile Menu -->
-  <div id="menuOverlay" class="fixed inset-0 bg-black/50 z-40 hidden lg:hidden" onclick="toggleMenu()"></div>
-  <div id="mobileMenu" class="mobile-menu fixed top-0 right-0 w-72 h-full bg-white z-50 shadow-2xl lg:hidden">
-    <div class="p-6">
-      <div class="flex justify-between items-center mb-8">
-        <span class="font-bold text-navy-900">Menu</span>
-        <button onclick="toggleMenu()" class="text-2xl text-gray-400">&times;</button>
-      </div>
-      <div class="flex flex-col gap-1">
-        <a href="index.html" class="py-3 px-3 rounded-lg text-gray-600 hover:bg-gray-50">Home</a>
-        <a href="about.html" class="py-3 px-3 rounded-lg text-gray-600 hover:bg-gray-50">About Us</a>
-        <a href="departments.html" class="py-3 px-3 rounded-lg text-gray-600 hover:bg-gray-50">Departments</a>
-        <a href="admissions.html" class="py-3 px-3 rounded-lg bg-emerald-50 text-navy-900 font-semibold">Admissions</a>
-        <a href="facilities.html" class="py-3 px-3 rounded-lg text-gray-600 hover:bg-gray-50">Facilities</a>
-        <a href="gallery.html" class="py-3 px-3 rounded-lg text-gray-600 hover:bg-gray-50">Gallery</a>
-        <a href="contact.html" class="mt-3 py-3 text-center bg-emerald-500 text-white rounded-lg font-medium">Contact Us</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Page Header -->
-  <section class="bg-navy-900 text-white py-12 md:py-16">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-      <h2 class="text-3xl md:text-4xl font-extrabold mb-2">Admissions 2026-27</h2>
-      <p class="text-gray-300 max-w-xl mx-auto">Apply for diploma programs at GP Hisar</p>
-    </div>
-  </section>
-
-  <!-- Admission Process -->
-  <section class="py-12 md:py-16">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-2xl font-bold text-navy-900 mb-6">Admission Process</h2>
-      <div class="grid md:grid-cols-4 gap-4">
-        <div class="bg-white border border-gray-200 rounded-xl p-5 text-center shadow-sm">
-          <div class="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center text-white font-bold mx-auto mb-3">1</div>
-          <h3 class="font-bold text-sm text-navy-900 mb-1">Online Registration</h3>
-          <p class="text-xs text-gray-500">Register on the HSBTE online portal with your 10th class details.</p>
-        </div>
-        <div class="bg-white border border-gray-200 rounded-xl p-5 text-center shadow-sm">
-          <div class="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center text-white font-bold mx-auto mb-3">2</div>
-          <h3 class="font-bold text-sm text-navy-900 mb-1">Document Upload</h3>
-          <p class="text-xs text-gray-500">Upload scanned copies of marksheets, certificates, and photographs.</p>
-        </div>
-        <div class="bg-white border border-gray-200 rounded-xl p-5 text-center shadow-sm">
-          <div class="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center text-white font-bold mx-auto mb-3">3</div>
-          <h3 class="font-bold text-sm text-navy-900 mb-1">Counselling</h3>
-          <p class="text-xs text-gray-500">Attend state-level counselling by DTE Haryana. Choose your branch.</p>
-        </div>
-        <div class="bg-white border border-gray-200 rounded-xl p-5 text-center shadow-sm">
-          <div class="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center text-white font-bold mx-auto mb-3">4</div>
-          <h3 class="font-bold text-sm text-navy-900 mb-1">Fee Payment</h3>
-          <p class="text-xs text-gray-500">Pay semester fee and complete admission formalities at the institute.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Eligibility & Documents -->
-  <section class="py-12 md:py-16 bg-gray-50">
-    <div class="max-w-6xl mx-auto px-4">
-      <div class="grid md:grid-cols-2 gap-6">
-        <div>
-          <h2 class="text-2xl font-bold text-navy-900 mb-4">Eligibility Criteria</h2>
-          <div class="bg-white rounded-xl p-5 border border-gray-200 shadow-sm mb-4">
-            <h3 class="font-bold text-navy-900 mb-2">For 1st Year (Direct Entry)</h3>
-            <ul class="text-sm text-gray-600 space-y-1.5">
-              <li class="flex gap-2"><span class="text-emerald-500 font-bold">&#10003;</span> Passed 10th (Matric) with minimum 35% marks</li>
-              <li class="flex gap-2"><span class="text-emerald-500 font-bold">&#10003;</span> Must have studied Mathematics & Science in 10th</li>
-              <li class="flex gap-2"><span class="text-emerald-500 font-bold">&#10003;</span> No upper age limit for government polytechnics</li>
-              <li class="flex gap-2"><span class="text-emerald-500 font-bold">&#10003;</span> Haryana residents get preference (HSBTE norms)</li>
-            </ul>
-          </div>
-          <div class="bg-white rounded-xl p-5 border border-gray-200 shadow-sm">
-            <h3 class="font-bold text-navy-900 mb-2">For Lateral Entry (2nd Year)</h3>
-            <ul class="text-sm text-gray-600 space-y-1.5">
-              <li class="flex gap-2"><span class="text-emerald-500 font-bold">&#10003;</span> Passed 12th with PCM or ITI (2 year) in relevant trade</li>
-              <li class="flex gap-2"><span class="text-emerald-500 font-bold">&#10003;</span> Minimum 45% marks (40% for SC/ST/BC)</li>
-              <li class="flex gap-2"><span class="text-emerald-500 font-bold">&#10003;</span> Direct admission to 2nd year (3rd semester)</li>
-            </ul>
-          </div>
-        </div>
-        <div>
-          <h2 class="text-2xl font-bold text-navy-900 mb-4">Required Documents</h2>
-          <div class="bg-white rounded-xl p-5 border border-gray-200 shadow-sm">
-            <ul class="text-sm text-gray-600 space-y-2">
-              <li class="flex gap-2"><span class="text-emerald-500">&#8226;</span> 10th Class Marksheet & Certificate (Original + 2 copies)</li>
-              <li class="flex gap-2"><span class="text-emerald-500">&#8226;</span> Character Certificate from School</li>
-              <li class="flex gap-2"><span class="text-emerald-500">&#8226;</span> Haryana Domicile / Residence Certificate</li>
-              <li class="flex gap-2"><span class="text-emerald-500">&#8226;</span> Category Certificate (SC/BC/OBC if applicable)</li>
-              <li class="flex gap-2"><span class="text-emerald-500">&#8226;</span> Income Certificate (for fee concession)</li>
-              <li class="flex gap-2"><span class="text-emerald-500">&#8226;</span> Aadhaar Card (Self and Parents)</li>
-              <li class="flex gap-2"><span class="text-emerald-500">&#8226;</span> Family ID (PPP / Parivar Pehchaan Patra)</li>
-              <li class="flex gap-2"><span class="text-emerald-500">&#8226;</span> Recent Passport Size Photographs (6 copies)</li>
-              <li class="flex gap-2"><span class="text-emerald-500">&#8226;</span> Migration Certificate (if from other board)</li>
-              <li class="flex gap-2"><span class="text-emerald-500">&#8226;</span> Medical Fitness Certificate</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Important Dates -->
-  <section class="py-12 md:py-16">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-2xl font-bold text-navy-900 mb-6">Important Dates (2026-27)</h2>
-      <div class="max-w-3xl mx-auto space-y-3">
-        <div class="flex items-center gap-4 bg-white border border-gray-200 rounded-xl p-4 shadow-sm">
-          <div class="w-14 h-14 bg-emerald-50 rounded-xl flex flex-col items-center justify-center shrink-0">
-            <span class="text-emerald-600 font-bold text-sm">Apr</span><span class="text-navy-900 text-xs">2026</span>
+            <h2 class="text-2xl font-bold text-navy-900 mb-4">
+              Eligibility Criteria
+            </h2>
+            <div
+              class="bg-white rounded-xl p-5 border border-gray-200 shadow-sm mb-4"
+            >
+              <h3 class="font-bold text-navy-900 mb-2">
+                For 1st Year (Direct Entry)
+              </h3>
+              <ul class="text-sm text-gray-600 space-y-1.5">
+                <li class="flex gap-2">
+                  <span class="text-emerald-500 font-bold">&#10003;</span>
+                  Passed 10th (Matric) with minimum 35% marks
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-emerald-500 font-bold">&#10003;</span> Must
+                  have studied Mathematics & Science in 10th
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-emerald-500 font-bold">&#10003;</span> No
+                  upper age limit for government polytechnics
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-emerald-500 font-bold">&#10003;</span>
+                  Haryana residents get preference (HSBTE norms)
+                </li>
+              </ul>
+            </div>
+            <div
+              class="bg-white rounded-xl p-5 border border-gray-200 shadow-sm"
+            >
+              <h3 class="font-bold text-navy-900 mb-2">
+                For Lateral Entry (2nd Year)
+              </h3>
+              <ul class="text-sm text-gray-600 space-y-1.5">
+                <li class="flex gap-2">
+                  <span class="text-emerald-500 font-bold">&#10003;</span>
+                  Passed 12th with PCM or ITI (2 year) in relevant trade
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-emerald-500 font-bold">&#10003;</span>
+                  Minimum 45% marks (40% for SC/ST/BC)
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-emerald-500 font-bold">&#10003;</span>
+                  Direct admission to 2nd year (3rd semester)
+                </li>
+              </ul>
+            </div>
           </div>
           <div>
-            <h4 class="font-semibold text-navy-900 text-sm">Online Registration Opens</h4>
-            <p class="text-gray-500 text-xs">Start date for online application submission on HSBTE portal</p>
+            <h2 class="text-2xl font-bold text-navy-900 mb-4">
+              Required Documents
+            </h2>
+            <div
+              class="bg-white rounded-xl p-5 border border-gray-200 shadow-sm"
+            >
+              <ul class="text-sm text-gray-600 space-y-2">
+                <li class="flex gap-2">
+                  <span class="text-emerald-500">&#8226;</span> 10th Class
+                  Marksheet & Certificate (Original + 2 copies)
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-emerald-500">&#8226;</span> Character
+                  Certificate from School
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-emerald-500">&#8226;</span> Haryana Domicile
+                  / Residence Certificate
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-emerald-500">&#8226;</span> Category
+                  Certificate (SC/BC/OBC if applicable)
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-emerald-500">&#8226;</span> Income
+                  Certificate (for fee concession)
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-emerald-500">&#8226;</span> Aadhaar Card
+                  (Self and Parents)
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-emerald-500">&#8226;</span> Family ID (PPP /
+                  Parivar Pehchaan Patra)
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-emerald-500">&#8226;</span> Recent Passport
+                  Size Photographs (6 copies)
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-emerald-500">&#8226;</span> Migration
+                  Certificate (if from other board)
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-emerald-500">&#8226;</span> Medical Fitness
+                  Certificate
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="flex items-center gap-4 bg-white border border-gray-200 rounded-xl p-4 shadow-sm">
-          <div class="w-14 h-14 bg-orange-50 rounded-xl flex flex-col items-center justify-center shrink-0">
-            <span class="text-orange-500 font-bold text-sm">Jun</span><span class="text-navy-900 text-xs">2026</span>
+      </div>
+    </section>
+
+    <!-- Important Dates -->
+    <section class="py-12 md:py-16">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-2xl font-bold text-navy-900 mb-6">
+          Important Dates (2026-27)
+        </h2>
+        <div class="max-w-3xl mx-auto space-y-3">
+          <div
+            class="flex items-center gap-4 bg-white border border-gray-200 rounded-xl p-4 shadow-sm"
+          >
+            <div
+              class="w-14 h-14 bg-emerald-50 rounded-xl flex flex-col items-center justify-center shrink-0"
+            >
+              <span class="text-emerald-600 font-bold text-sm">Apr</span
+              ><span class="text-navy-900 text-xs">2026</span>
+            </div>
+            <div>
+              <h4 class="font-semibold text-navy-900 text-sm">
+                Online Registration Opens
+              </h4>
+              <p class="text-gray-500 text-xs">
+                Start date for online application submission on HSBTE portal
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex items-center gap-4 bg-white border border-gray-200 rounded-xl p-4 shadow-sm"
+          >
+            <div
+              class="w-14 h-14 bg-orange-50 rounded-xl flex flex-col items-center justify-center shrink-0"
+            >
+              <span class="text-orange-500 font-bold text-sm">Jun</span
+              ><span class="text-navy-900 text-xs">2026</span>
+            </div>
+            <div>
+              <h4 class="font-semibold text-navy-900 text-sm">
+                Last Date for Application
+              </h4>
+              <p class="text-gray-500 text-xs">
+                Deadline to submit online application with all documents
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex items-center gap-4 bg-white border border-gray-200 rounded-xl p-4 shadow-sm"
+          >
+            <div
+              class="w-14 h-14 bg-blue-50 rounded-xl flex flex-col items-center justify-center shrink-0"
+            >
+              <span class="text-blue-500 font-bold text-sm">Jul</span
+              ><span class="text-navy-900 text-xs">2026</span>
+            </div>
+            <div>
+              <h4 class="font-semibold text-navy-900 text-sm">
+                1st Counselling Round
+              </h4>
+              <p class="text-gray-500 text-xs">
+                State-level counselling and seat allotment begins
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex items-center gap-4 bg-white border border-gray-200 rounded-xl p-4 shadow-sm"
+          >
+            <div
+              class="w-14 h-14 bg-purple-50 rounded-xl flex flex-col items-center justify-center shrink-0"
+            >
+              <span class="text-purple-500 font-bold text-sm">Aug</span
+              ><span class="text-navy-900 text-xs">2026</span>
+            </div>
+            <div>
+              <h4 class="font-semibold text-navy-900 text-sm">
+                Classes Commence
+              </h4>
+              <p class="text-gray-500 text-xs">
+                Academic session 2026-27 officially begins
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-12 bg-navy-900">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h3 class="text-2xl font-bold text-white mb-3">
+          Need Help with Admissions?
+        </h3>
+        <p class="text-gray-400 mb-6">
+          Our admission office is ready to assist you.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+          <a
+            href="contact.html"
+            class="px-6 py-3 bg-emerald-500 text-white font-semibold rounded-lg hover:bg-emerald-600 transition"
+            >Contact Admission Office</a
+          >
+          <a
+            href="tel:+911662277460"
+            class="px-6 py-3 bg-white/10 text-white font-semibold rounded-lg border border-white/20 hover:bg-white/20 transition"
+            >Phone: +91-1662-277460</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="bg-navy-900 text-gray-400 pt-12 pb-6 border-t border-white/5"
+    >
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="grid md:grid-cols-4 gap-8 mb-10">
+          <div>
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-9 h-9 bg-emerald-500 rounded-full flex items-center justify-center text-white font-bold text-sm"
+              >
+                GP
+              </div>
+              <div>
+                <h4 class="text-white font-bold text-sm">
+                  Guru Daksh Govt. Polytechnic
+                </h4>
+                <p class="text-xs text-gray-500">Hisar, Haryana</p>
+              </div>
+            </div>
+            <p class="text-sm leading-relaxed">
+              A government polytechnic under Dept. of Technical Education,
+              Haryana.
+            </p>
           </div>
           <div>
-            <h4 class="font-semibold text-navy-900 text-sm">Last Date for Application</h4>
-            <p class="text-gray-500 text-xs">Deadline to submit online application with all documents</p>
-          </div>
-        </div>
-        <div class="flex items-center gap-4 bg-white border border-gray-200 rounded-xl p-4 shadow-sm">
-          <div class="w-14 h-14 bg-blue-50 rounded-xl flex flex-col items-center justify-center shrink-0">
-            <span class="text-blue-500 font-bold text-sm">Jul</span><span class="text-navy-900 text-xs">2026</span>
+            <h4 class="text-white font-semibold mb-3">Quick Links</h4>
+            <div class="flex flex-col gap-2 text-sm">
+              <a href="index.html" class="hover:text-emerald-400 transition"
+                >Home</a
+              >
+              <a href="about.html" class="hover:text-emerald-400 transition"
+                >About Us</a
+              >
+              <a
+                href="departments.html"
+                class="hover:text-emerald-400 transition"
+                >Departments</a
+              >
+              <a
+                href="admissions.html"
+                class="hover:text-emerald-400 transition"
+                >Admissions</a
+              >
+              <a
+                href="facilities.html"
+                class="hover:text-emerald-400 transition"
+                >Facilities</a
+              >
+              <a href="gallery.html" class="hover:text-emerald-400 transition"
+                >Gallery</a
+              >
+              <a href="contact.html" class="hover:text-emerald-400 transition"
+                >Contact Us</a
+              >
+            </div>
           </div>
           <div>
-            <h4 class="font-semibold text-navy-900 text-sm">1st Counselling Round</h4>
-            <p class="text-gray-500 text-xs">State-level counselling and seat allotment begins</p>
-          </div>
-        </div>
-        <div class="flex items-center gap-4 bg-white border border-gray-200 rounded-xl p-4 shadow-sm">
-          <div class="w-14 h-14 bg-purple-50 rounded-xl flex flex-col items-center justify-center shrink-0">
-            <span class="text-purple-500 font-bold text-sm">Aug</span><span class="text-navy-900 text-xs">2026</span>
+            <h4 class="text-white font-semibold mb-3">Contact Info</h4>
+            <div class="flex flex-col gap-2 text-sm">
+              <p>Delhi Road, Hisar - 125001</p>
+              <p>Phone: +91-1662-277460</p>
+              <p>Email: gphisar@gphisar.ac.in</p>
+            </div>
           </div>
           <div>
-            <h4 class="font-semibold text-navy-900 text-sm">Classes Commence</h4>
-            <p class="text-gray-500 text-xs">Academic session 2026-27 officially begins</p>
+            <h4 class="text-white font-semibold mb-3">
+              Important External Links
+            </h4>
+            <div class="flex flex-col gap-2 text-sm">
+              <a
+                href="https://www.techeduhry.gov.in/"
+                target="_blank"
+                rel="noopener"
+                class="hover:text-emerald-400 transition"
+                >Department of Technical Education, Haryana</a
+              >
+              <a
+                href="https://www.hstes.org.in/"
+                target="_blank"
+                rel="noopener"
+                class="hover:text-emerald-400 transition"
+                >Haryana State Technical Education Society (HSTES)</a
+              >
+              <a
+                href="https://techadmissionshry.gov.in/"
+                target="_blank"
+                rel="noopener"
+                class="hover:text-emerald-400 transition"
+                >Online Diploma Admission Portal</a
+              >
+              <a
+                href="https://hsbte.org.in/"
+                target="_blank"
+                rel="noopener"
+                class="hover:text-emerald-400 transition"
+                >Haryana State Board of Technical Education (HSBTE)</a
+              >
+              <a
+                href="https://www.aicte-india.org/"
+                target="_blank"
+                rel="noopener"
+                class="hover:text-emerald-400 transition"
+                >All India Council for Technical Education (AICTE)</a
+              >
+              <a
+                href="https://gphisar.ac.in/"
+                target="_blank"
+                rel="noopener"
+                class="hover:text-emerald-400 transition"
+                >Official Institute Website</a
+              >
+            </div>
           </div>
         </div>
+        <div
+          class="border-t border-white/10 pt-5 flex flex-col md:flex-row justify-between items-center gap-3 text-sm"
+        >
+          <p>
+            &copy; 2026 Guru Daksh Govt. Polytechnic, Hisar. All rights
+            reserved.
+          </p>
+          <p>Under Department of Technical Education, Government of Haryana</p>
+        </div>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- CTA -->
-  <section class="py-12 bg-navy-900">
-    <div class="max-w-4xl mx-auto px-4 text-center">
-      <h3 class="text-2xl font-bold text-white mb-3">Need Help with Admissions?</h3>
-      <p class="text-gray-400 mb-6">Our admission office is ready to assist you.</p>
-      <div class="flex flex-col sm:flex-row gap-3 justify-center">
-        <a href="contact.html" class="px-6 py-3 bg-emerald-500 text-white font-semibold rounded-lg hover:bg-emerald-600 transition">Contact Admission Office</a>
-        <a href="tel:+911662277460" class="px-6 py-3 bg-white/10 text-white font-semibold rounded-lg border border-white/20 hover:bg-white/20 transition">Phone: +91-1662-277460</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-navy-900 text-gray-400 pt-12 pb-6 border-t border-white/5">
-    <div class="max-w-6xl mx-auto px-4">
-      <div class="grid md:grid-cols-4 gap-8 mb-10">
-        <div>
-          <div class="flex items-center gap-3 mb-3">
-            <div class="w-9 h-9 bg-emerald-500 rounded-full flex items-center justify-center text-white font-bold text-sm">GP</div>
-            <div><h4 class="text-white font-bold text-sm">Guru Daksh Govt. Polytechnic</h4><p class="text-xs text-gray-500">Hisar, Haryana</p></div>
-          </div>
-          <p class="text-sm leading-relaxed">A government polytechnic under Dept. of Technical Education, Haryana.</p>
-        </div>
-        <div>
-          <h4 class="text-white font-semibold mb-3">Quick Links</h4>
-          <div class="flex flex-col gap-2 text-sm">
-            <a href="about.html" class="hover:text-emerald-400 transition">About Us</a>
-            <a href="departments.html" class="hover:text-emerald-400 transition">Departments</a>
-            <a href="admissions.html" class="hover:text-emerald-400 transition">Admissions</a>
-            <a href="facilities.html" class="hover:text-emerald-400 transition">Facilities</a>
-            <a href="gallery.html" class="hover:text-emerald-400 transition">Gallery</a>
-          </div>
-        </div>
-        <div>
-          <h4 class="text-white font-semibold mb-3">Contact Info</h4>
-          <div class="flex flex-col gap-2 text-sm">
-            <p>Delhi Road, Hisar - 125001</p>
-            <p>Phone: +91-1662-277460</p>
-            <p>Email: gphisar@gphisar.ac.in</p>
-          </div>
-        </div>
-        <div>
-          <h4 class="text-white font-semibold mb-3">Important Links</h4>
-          <div class="flex flex-col gap-2 text-sm">
-            <a href="#" class="hover:text-emerald-400 transition">AICTE</a>
-            <a href="#" class="hover:text-emerald-400 transition">HSBTE</a>
-            <a href="#" class="hover:text-emerald-400 transition">DTE Haryana</a>
-            <a href="#" class="hover:text-emerald-400 transition">Haryana Govt.</a>
-          </div>
-        </div>
-      </div>
-      <div class="border-t border-white/10 pt-5 flex flex-col md:flex-row justify-between items-center gap-3 text-sm">
-        <p>&copy; 2026 Guru Daksh Govt. Polytechnic, Hisar. All rights reserved.</p>
-        <p>Under Department of Technical Education, Government of Haryana</p>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    function toggleMenu() {
-      document.getElementById('mobileMenu').classList.toggle('open');
-      document.getElementById('menuOverlay').classList.toggle('hidden');
-      document.body.classList.toggle('overflow-hidden');
-    }
-    document.getElementById('menuBtn').addEventListener('click', toggleMenu);
-  </script>
-</body>
+    <script>
+      function toggleMenu() {
+        document.getElementById("mobileMenu").classList.toggle("open");
+        document.getElementById("menuOverlay").classList.toggle("hidden");
+        document.body.classList.toggle("overflow-hidden");
+      }
+      document.getElementById("menuBtn").addEventListener("click", toggleMenu);
+    </script>
+  </body>
 </html>

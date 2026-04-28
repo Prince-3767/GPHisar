@@ -1,213 +1,460 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - Guru Daksh Government Polytechnic, Hisar</title>
-  <meta name="description" content="About Guru Daksh Government Polytechnic Hisar - history, vision, mission. Established 1992.">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = { theme: { extend: { colors: { navy: { 900: '#0F172A', 800: '#1E293B', 700: '#334155' }, emerald: { 500: '#10B981', 600: '#059669' } } } } }
-  </script>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-    * { font-family: 'Inter', system-ui, sans-serif; scroll-behavior: smooth; }
-    .mobile-menu { transform: translateX(100%); transition: transform 0.3s; }
-    .mobile-menu.open { transform: translateX(0); }
-  </style>
-</head>
-<body class="bg-white text-gray-800">
-
-  <!-- Top Bar -->
-  <div class="bg-navy-900 text-white text-xs py-1.5 hidden md:block">
-    <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
-      <span>Email: gphisar@gphisar.ac.in &nbsp;|&nbsp; Phone: +91-1662-277460</span>
-      <span>Under Dept. of Technical Education, Haryana</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Guru Daksh Government Polytechnic, Hisar</title>
+    <meta
+      name="description"
+      content="About Guru Daksh Government Polytechnic Hisar - history, vision, mission. Established 1992."
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              navy: { 900: "#0F172A", 800: "#1E293B", 700: "#334155" },
+              emerald: { 500: "#10B981", 600: "#059669" },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+      * {
+        font-family: "Inter", system-ui, sans-serif;
+        scroll-behavior: smooth;
+      }
+      .mobile-menu {
+        transform: translateX(100%);
+        transition: transform 0.3s;
+      }
+      .mobile-menu.open {
+        transform: translateX(0);
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- Top Bar -->
+    <div class="bg-navy-900 text-white text-xs py-1.5 hidden md:block">
+      <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+        <span
+          >Email: gphisar@gphisar.ac.in &nbsp;|&nbsp; Phone:
+          +91-1662-277460</span
+        >
+        <span>Under Dept. of Technical Education, Haryana</span>
+      </div>
     </div>
-  </div>
 
-  <!-- Navigation -->
-  <nav class="bg-white sticky top-0 z-50 shadow-md">
-    <div class="max-w-6xl mx-auto px-4">
-      <div class="flex items-center justify-between h-16">
-        <a href="index.html" class="flex items-center gap-3">
-          <div class="w-10 h-10 bg-navy-900 rounded-full flex items-center justify-center text-white font-bold text-sm">GP</div>
+    <!-- Navigation -->
+    <nav class="bg-white sticky top-0 z-50 shadow-md">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex items-center justify-between h-16">
+          <a href="index.html" class="flex items-center gap-3">
+            <div
+              class="w-10 h-10 bg-navy-900 rounded-full flex items-center justify-center text-white font-bold text-sm"
+            >
+              GP
+            </div>
+            <div>
+              <h1 class="text-sm font-bold text-navy-900 leading-tight">
+                Guru Daksh Govt. Polytechnic
+              </h1>
+              <p class="text-[10px] text-gray-500">
+                Hisar, Haryana | Est. 1992
+              </p>
+            </div>
+          </a>
+          <div class="hidden lg:flex items-center gap-6">
+            <a
+              href="index.html"
+              class="text-sm font-medium text-gray-500 hover:text-navy-900"
+              >Home</a
+            >
+            <a href="about.html" class="text-sm font-semibold text-navy-900"
+              >About Us</a
+            >
+            <a
+              href="departments.html"
+              class="text-sm font-medium text-gray-500 hover:text-navy-900"
+              >Departments</a
+            >
+            <a
+              href="admissions.html"
+              class="text-sm font-medium text-gray-500 hover:text-navy-900"
+              >Admissions</a
+            >
+            <a
+              href="facilities.html"
+              class="text-sm font-medium text-gray-500 hover:text-navy-900"
+              >Facilities</a
+            >
+            <a
+              href="gallery.html"
+              class="text-sm font-medium text-gray-500 hover:text-navy-900"
+              >Gallery</a
+            >
+            <a
+              href="contact.html"
+              class="px-4 py-2 bg-emerald-500 text-white text-sm font-medium rounded-lg hover:bg-emerald-600 transition"
+              >Contact Us</a
+            >
+          </div>
+          <button id="menuBtn" class="lg:hidden p-2" aria-label="Toggle menu">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div
+      id="menuOverlay"
+      class="fixed inset-0 bg-black/50 z-40 hidden lg:hidden"
+      onclick="toggleMenu()"
+    ></div>
+    <div
+      id="mobileMenu"
+      class="mobile-menu fixed top-0 right-0 w-72 h-full bg-white z-50 shadow-2xl lg:hidden"
+    >
+      <div class="p-6">
+        <div class="flex justify-between items-center mb-8">
+          <span class="font-bold text-navy-900">Menu</span>
+          <button onclick="toggleMenu()" class="text-2xl text-gray-400">
+            &times;
+          </button>
+        </div>
+        <div class="flex flex-col gap-1">
+          <a
+            href="index.html"
+            class="py-3 px-3 rounded-lg text-gray-600 hover:bg-gray-50"
+            >Home</a
+          >
+          <a
+            href="about.html"
+            class="py-3 px-3 rounded-lg bg-emerald-50 text-navy-900 font-semibold"
+            >About Us</a
+          >
+          <a
+            href="departments.html"
+            class="py-3 px-3 rounded-lg text-gray-600 hover:bg-gray-50"
+            >Departments</a
+          >
+          <a
+            href="admissions.html"
+            class="py-3 px-3 rounded-lg text-gray-600 hover:bg-gray-50"
+            >Admissions</a
+          >
+          <a
+            href="facilities.html"
+            class="py-3 px-3 rounded-lg text-gray-600 hover:bg-gray-50"
+            >Facilities</a
+          >
+          <a
+            href="gallery.html"
+            class="py-3 px-3 rounded-lg text-gray-600 hover:bg-gray-50"
+            >Gallery</a
+          >
+          <a
+            href="contact.html"
+            class="mt-3 py-3 text-center bg-emerald-500 text-white rounded-lg font-medium"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="bg-navy-900 text-white py-12 md:py-16">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-extrabold mb-2">About Us</h2>
+        <p class="text-gray-300 max-w-xl mx-auto">
+          History, Vision & Mission of Guru Daksh Government Polytechnic, Hisar
+        </p>
+      </div>
+    </section>
+
+    <!-- History -->
+    <section class="py-12 md:py-16">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-2xl font-bold text-navy-900 mb-6">Our History</h2>
+        <div class="grid md:grid-cols-2 gap-8 items-start">
+          <div class="space-y-4 text-gray-600 leading-relaxed">
+            <p>
+              Guru Daksh Government Polytechnic, Hisar was established in 1992
+              by the Government of Haryana under the Department of Technical
+              Education. Named after the revered saint Guru Daksh, the institute
+              was founded to provide quality technical education to the youth of
+              Haryana.
+            </p>
+            <p>
+              Over three decades, the institute has grown from a few programs to
+              now providing 13+ diploma courses across engineering, technology,
+              and design disciplines. Our alumni serve in organizations across
+              India.
+            </p>
+            <p>
+              The institute is spread across a 40-acre campus in Hisar with
+              laboratories, workshops, a central library, hostels, and sports
+              facilities.
+            </p>
+          </div>
           <div>
-            <h1 class="text-sm font-bold text-navy-900 leading-tight">Guru Daksh Govt. Polytechnic</h1>
-            <p class="text-[10px] text-gray-500">Hisar, Haryana | Est. 1992</p>
-          </div>
-        </a>
-        <div class="hidden lg:flex items-center gap-6">
-          <a href="index.html" class="text-sm font-medium text-gray-500 hover:text-navy-900">Home</a>
-          <a href="about.html" class="text-sm font-semibold text-navy-900">About Us</a>
-          <a href="departments.html" class="text-sm font-medium text-gray-500 hover:text-navy-900">Departments</a>
-          <a href="admissions.html" class="text-sm font-medium text-gray-500 hover:text-navy-900">Admissions</a>
-          <a href="facilities.html" class="text-sm font-medium text-gray-500 hover:text-navy-900">Facilities</a>
-          <a href="gallery.html" class="text-sm font-medium text-gray-500 hover:text-navy-900">Gallery</a>
-          <a href="contact.html" class="px-4 py-2 bg-emerald-500 text-white text-sm font-medium rounded-lg hover:bg-emerald-600 transition">Contact Us</a>
-        </div>
-        <button id="menuBtn" class="lg:hidden p-2" aria-label="Toggle menu">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
-        </button>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Mobile Menu -->
-  <div id="menuOverlay" class="fixed inset-0 bg-black/50 z-40 hidden lg:hidden" onclick="toggleMenu()"></div>
-  <div id="mobileMenu" class="mobile-menu fixed top-0 right-0 w-72 h-full bg-white z-50 shadow-2xl lg:hidden">
-    <div class="p-6">
-      <div class="flex justify-between items-center mb-8">
-        <span class="font-bold text-navy-900">Menu</span>
-        <button onclick="toggleMenu()" class="text-2xl text-gray-400">&times;</button>
-      </div>
-      <div class="flex flex-col gap-1">
-        <a href="index.html" class="py-3 px-3 rounded-lg text-gray-600 hover:bg-gray-50">Home</a>
-        <a href="about.html" class="py-3 px-3 rounded-lg bg-emerald-50 text-navy-900 font-semibold">About Us</a>
-        <a href="departments.html" class="py-3 px-3 rounded-lg text-gray-600 hover:bg-gray-50">Departments</a>
-        <a href="admissions.html" class="py-3 px-3 rounded-lg text-gray-600 hover:bg-gray-50">Admissions</a>
-        <a href="facilities.html" class="py-3 px-3 rounded-lg text-gray-600 hover:bg-gray-50">Facilities</a>
-        <a href="gallery.html" class="py-3 px-3 rounded-lg text-gray-600 hover:bg-gray-50">Gallery</a>
-        <a href="contact.html" class="mt-3 py-3 text-center bg-emerald-500 text-white rounded-lg font-medium">Contact Us</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Page Header -->
-  <section class="bg-navy-900 text-white py-12 md:py-16">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-      <h2 class="text-3xl md:text-4xl font-extrabold mb-2">About Us</h2>
-      <p class="text-gray-300 max-w-xl mx-auto">History, Vision & Mission of Guru Daksh Government Polytechnic, Hisar</p>
-    </div>
-  </section>
-
-  <!-- History -->
-  <section class="py-12 md:py-16">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-2xl font-bold text-navy-900 mb-6">Our History</h2>
-      <div class="grid md:grid-cols-2 gap-8 items-start">
-        <div class="space-y-4 text-gray-600 leading-relaxed">
-          <p>Guru Daksh Government Polytechnic, Hisar was established in 1992 by the Government of Haryana under the Department of Technical Education. Named after the revered saint Guru Daksh, the institute was founded to provide quality technical education to the youth of Haryana.</p>
-          <p>Over three decades, the institute has grown from a few programs to now providing 13+ diploma courses across engineering, technology, and design disciplines. Our alumni serve in organizations across India.</p>
-          <p>The institute is spread across a 40-acre campus in Hisar with laboratories, workshops, a central library, hostels, and sports facilities.</p>
-        </div>
-        <div>
-          <img src="https://gphisar.ac.in/wp-content/uploads/2023/07/IMG20220808093629-scaled-1-2048x922.jpg" alt="Institute" class="w-full rounded-xl shadow-lg">
-          <div class="grid grid-cols-2 gap-3 mt-3">
-            <div class="bg-navy-900 rounded-xl p-4 text-center">
-              <div class="text-2xl font-extrabold text-emerald-400">30+</div>
-              <p class="text-gray-400 text-xs">Years of Excellence</p>
-            </div>
-            <div class="bg-navy-900 rounded-xl p-4 text-center">
-              <div class="text-2xl font-extrabold text-emerald-400">50,000+</div>
-              <p class="text-gray-400 text-xs">Alumni Worldwide</p>
+            <img
+              src="https://gphisar.ac.in/wp-content/uploads/2023/07/IMG20220808093629-scaled-1-2048x922.jpg"
+              alt="Institute"
+              class="w-full rounded-xl shadow-lg"
+            />
+            <div class="grid grid-cols-2 gap-3 mt-3">
+              <div class="bg-navy-900 rounded-xl p-4 text-center">
+                <div class="text-2xl font-extrabold text-emerald-400">30+</div>
+                <p class="text-gray-400 text-xs">Years of Excellence</p>
+              </div>
+              <div class="bg-navy-900 rounded-xl p-4 text-center">
+                <div class="text-2xl font-extrabold text-emerald-400">
+                  50,000+
+                </div>
+                <p class="text-gray-400 text-xs">Alumni Worldwide</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Vision & Mission -->
-  <section class="py-12 md:py-16 bg-gray-50">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-2xl font-bold text-navy-900 mb-6">Vision & Mission</h2>
-      <div class="grid md:grid-cols-2 gap-5">
-        <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
-          <h3 class="text-lg font-bold text-navy-900 mb-3">Our Vision</h3>
-          <p class="text-gray-600 leading-relaxed">To be a recognized center of excellence in technical education, producing competent and socially responsible diploma engineers who contribute to the development of the nation.</p>
-        </div>
-        <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
-          <h3 class="text-lg font-bold text-navy-900 mb-3">Our Mission</h3>
-          <ul class="text-gray-600 leading-relaxed space-y-2">
-            <li class="flex gap-2"><span class="text-emerald-500 font-bold">-</span> Provide industry-relevant technical education</li>
-            <li class="flex gap-2"><span class="text-emerald-500 font-bold">-</span> Foster innovation and entrepreneurial thinking</li>
-            <li class="flex gap-2"><span class="text-emerald-500 font-bold">-</span> Develop skilled professionals with strong values</li>
-            <li class="flex gap-2"><span class="text-emerald-500 font-bold">-</span> Strengthen industry-academia partnerships</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Principal's Message -->
-  <section class="py-12 md:py-16">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-2xl font-bold text-navy-900 mb-6">Principal's Message</h2>
-      <div class="grid md:grid-cols-5 gap-8 items-start">
-        <div class="md:col-span-2 text-center">
-          <img src="https://gphisar.ac.in/wp-content/uploads/2026/01/Jagmohan-Singh.jpg" alt="Principal" class="w-full max-w-xs rounded-xl shadow-lg mx-auto">
-          <div class="bg-navy-900 rounded-lg p-3 mt-3 max-w-xs mx-auto">
-            <h4 class="text-white font-bold text-sm">Shri Jagmohan Singh</h4>
-            <p class="text-emerald-400 text-xs">Principal</p>
+    <!-- Vision & Mission -->
+    <section class="py-12 md:py-16 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-2xl font-bold text-navy-900 mb-6">Vision & Mission</h2>
+        <div class="grid md:grid-cols-2 gap-5">
+          <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+            <h3 class="text-lg font-bold text-navy-900 mb-3">Our Vision</h3>
+            <p class="text-gray-600 leading-relaxed">
+              To be a recognized center of excellence in technical education,
+              producing competent and socially responsible diploma engineers who
+              contribute to the development of the nation.
+            </p>
           </div>
-        </div>
-        <div class="md:col-span-3 space-y-3 text-gray-600 leading-relaxed">
-          <p>Dear Students, Parents, and Well-Wishers,</p>
-          <p>It is my privilege to welcome you to Guru Daksh Government Polytechnic, Hisar. Since 1992, we have been committed to quality technical education and holistic development of our students.</p>
-          <p>Our institution provides a good environment for learning with dedicated faculty, laboratories, workshops, and smart classrooms.</p>
-          <p>We believe that true education goes beyond textbooks. Our curriculum balances theoretical knowledge with practical skills. We also emphasize personality development, sports, and cultural activities.</p>
-          <p>I invite you to explore the opportunities that our campus has to offer.</p>
-          <p class="font-semibold text-navy-900">Warm regards,<br>Shri Jagmohan Singh<br>Principal, Guru Daksh Govt. Polytechnic, Hisar</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-navy-900 text-gray-400 pt-12 pb-6">
-    <div class="max-w-6xl mx-auto px-4">
-      <div class="grid md:grid-cols-4 gap-8 mb-10">
-        <div>
-          <div class="flex items-center gap-3 mb-3">
-            <div class="w-9 h-9 bg-emerald-500 rounded-full flex items-center justify-center text-white font-bold text-sm">GP</div>
-            <div><h4 class="text-white font-bold text-sm">Guru Daksh Govt. Polytechnic</h4><p class="text-xs text-gray-500">Hisar, Haryana</p></div>
-          </div>
-          <p class="text-sm leading-relaxed">A government polytechnic under Dept. of Technical Education, Haryana. Providing quality technical education since 1992.</p>
-        </div>
-        <div>
-          <h4 class="text-white font-semibold mb-3">Quick Links</h4>
-          <div class="flex flex-col gap-2 text-sm">
-            <a href="about.html" class="hover:text-emerald-400 transition">About Us</a>
-            <a href="departments.html" class="hover:text-emerald-400 transition">Departments</a>
-            <a href="admissions.html" class="hover:text-emerald-400 transition">Admissions</a>
-            <a href="facilities.html" class="hover:text-emerald-400 transition">Facilities</a>
-            <a href="gallery.html" class="hover:text-emerald-400 transition">Gallery</a>
-          </div>
-        </div>
-        <div>
-          <h4 class="text-white font-semibold mb-3">Contact Info</h4>
-          <div class="flex flex-col gap-2 text-sm">
-            <p>Delhi Road, Hisar - 125001</p>
-            <p>Phone: +91-1662-277460</p>
-            <p>Email: gphisar@gphisar.ac.in</p>
-            <p>Mon-Sat: 9:00 AM - 5:00 PM</p>
-          </div>
-        </div>
-        <div>
-          <h4 class="text-white font-semibold mb-3">Important Links</h4>
-          <div class="flex flex-col gap-2 text-sm">
-            <a href="#" class="hover:text-emerald-400 transition">AICTE</a>
-            <a href="#" class="hover:text-emerald-400 transition">HSBTE</a>
-            <a href="#" class="hover:text-emerald-400 transition">DTE Haryana</a>
-            <a href="#" class="hover:text-emerald-400 transition">Haryana Govt.</a>
+          <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+            <h3 class="text-lg font-bold text-navy-900 mb-3">Our Mission</h3>
+            <ul class="text-gray-600 leading-relaxed space-y-2">
+              <li class="flex gap-2">
+                <span class="text-emerald-500 font-bold">-</span> Provide
+                industry-relevant technical education
+              </li>
+              <li class="flex gap-2">
+                <span class="text-emerald-500 font-bold">-</span> Foster
+                innovation and entrepreneurial thinking
+              </li>
+              <li class="flex gap-2">
+                <span class="text-emerald-500 font-bold">-</span> Develop
+                skilled professionals with strong values
+              </li>
+              <li class="flex gap-2">
+                <span class="text-emerald-500 font-bold">-</span> Strengthen
+                industry-academia partnerships
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="border-t border-white/10 pt-5 flex flex-col md:flex-row justify-between items-center gap-3 text-sm">
-        <p>&copy; 2026 Guru Daksh Govt. Polytechnic, Hisar. All rights reserved.</p>
-        <p>Under Department of Technical Education, Government of Haryana</p>
-      </div>
-    </div>
-  </footer>
+    </section>
 
-  <script>
-    function toggleMenu() {
-      document.getElementById('mobileMenu').classList.toggle('open');
-      document.getElementById('menuOverlay').classList.toggle('hidden');
-      document.body.classList.toggle('overflow-hidden');
-    }
-    document.getElementById('menuBtn').addEventListener('click', toggleMenu);
-  </script>
-</body>
+    <!-- Principal's Message -->
+    <section class="py-12 md:py-16">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-2xl font-bold text-navy-900 mb-6">
+          Principal's Message
+        </h2>
+        <div class="grid md:grid-cols-5 gap-8 items-start">
+          <div class="md:col-span-2 text-center">
+            <img
+              src="https://gphisar.ac.in/wp-content/uploads/2026/01/Jagmohan-Singh.jpg"
+              alt="Principal"
+              class="w-full max-w-xs rounded-xl shadow-lg mx-auto"
+            />
+            <div class="bg-navy-900 rounded-lg p-3 mt-3 max-w-xs mx-auto">
+              <h4 class="text-white font-bold text-sm">Shri Jagmohan Singh</h4>
+              <p class="text-emerald-400 text-xs">Principal</p>
+            </div>
+          </div>
+          <div class="md:col-span-3 space-y-3 text-gray-600 leading-relaxed">
+            <p>Dear Students, Parents, and Well-Wishers,</p>
+            <p>
+              It is my privilege to welcome you to Guru Daksh Government
+              Polytechnic, Hisar. Since 1992, we have been committed to quality
+              technical education and holistic development of our students.
+            </p>
+            <p>
+              Our institution provides a good environment for learning with
+              dedicated faculty, laboratories, workshops, and smart classrooms.
+            </p>
+            <p>
+              We believe that true education goes beyond textbooks. Our
+              curriculum balances theoretical knowledge with practical skills.
+              We also emphasize personality development, sports, and cultural
+              activities.
+            </p>
+            <p>
+              I invite you to explore the opportunities that our campus has to
+              offer.
+            </p>
+            <p class="font-semibold text-navy-900">
+              Warm regards,<br />Shri Jagmohan Singh<br />Principal, Guru Daksh
+              Govt. Polytechnic, Hisar
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-900 text-gray-400 pt-12 pb-6">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="grid md:grid-cols-4 gap-8 mb-10">
+          <div>
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-9 h-9 bg-emerald-500 rounded-full flex items-center justify-center text-white font-bold text-sm"
+              >
+                GP
+              </div>
+              <div>
+                <h4 class="text-white font-bold text-sm">
+                  Guru Daksh Govt. Polytechnic
+                </h4>
+                <p class="text-xs text-gray-500">Hisar, Haryana</p>
+              </div>
+            </div>
+            <p class="text-sm leading-relaxed">
+              A government polytechnic under Dept. of Technical Education,
+              Haryana. Providing quality technical education since 1992.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-white font-semibold mb-3">Quick Links</h4>
+            <div class="flex flex-col gap-2 text-sm">
+              <a href="index.html" class="hover:text-emerald-400 transition"
+                >Home</a
+              >
+              <a href="about.html" class="hover:text-emerald-400 transition"
+                >About Us</a
+              >
+              <a
+                href="departments.html"
+                class="hover:text-emerald-400 transition"
+                >Departments</a
+              >
+              <a
+                href="admissions.html"
+                class="hover:text-emerald-400 transition"
+                >Admissions</a
+              >
+              <a
+                href="facilities.html"
+                class="hover:text-emerald-400 transition"
+                >Facilities</a
+              >
+              <a href="gallery.html" class="hover:text-emerald-400 transition"
+                >Gallery</a
+              >
+              <a href="contact.html" class="hover:text-emerald-400 transition"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+          <div>
+            <h4 class="text-white font-semibold mb-3">Contact Info</h4>
+            <div class="flex flex-col gap-2 text-sm">
+              <p>Delhi Road, Hisar - 125001</p>
+              <p>Phone: +91-1662-277460</p>
+              <p>Email: gphisar@gphisar.ac.in</p>
+              <p>Mon-Sat: 9:00 AM - 5:00 PM</p>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-white font-semibold mb-3">
+              Important External Links
+            </h4>
+            <div class="flex flex-col gap-2 text-sm">
+              <a
+                href="https://www.techeduhry.gov.in/"
+                target="_blank"
+                rel="noopener"
+                class="hover:text-emerald-400 transition"
+                >Department of Technical Education, Haryana</a
+              >
+              <a
+                href="https://www.hstes.org.in/"
+                target="_blank"
+                rel="noopener"
+                class="hover:text-emerald-400 transition"
+                >Haryana State Technical Education Society (HSTES)</a
+              >
+              <a
+                href="https://techadmissionshry.gov.in/"
+                target="_blank"
+                rel="noopener"
+                class="hover:text-emerald-400 transition"
+                >Online Diploma Admission Portal</a
+              >
+              <a
+                href="https://hsbte.org.in/"
+                target="_blank"
+                rel="noopener"
+                class="hover:text-emerald-400 transition"
+                >Haryana State Board of Technical Education (HSBTE)</a
+              >
+              <a
+                href="https://www.aicte-india.org/"
+                target="_blank"
+                rel="noopener"
+                class="hover:text-emerald-400 transition"
+                >All India Council for Technical Education (AICTE)</a
+              >
+              <a
+                href="https://gphisar.ac.in/"
+                target="_blank"
+                rel="noopener"
+                class="hover:text-emerald-400 transition"
+                >Official Institute Website</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-white/10 pt-5 flex flex-col md:flex-row justify-between items-center gap-3 text-sm"
+        >
+          <p>
+            &copy; 2026 Guru Daksh Govt. Polytechnic, Hisar. All rights
+            reserved.
+          </p>
+          <p>Under Department of Technical Education, Government of Haryana</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("mobileMenu").classList.toggle("open");
+        document.getElementById("menuOverlay").classList.toggle("hidden");
+        document.body.classList.toggle("overflow-hidden");
+      }
+      document.getElementById("menuBtn").addEventListener("click", toggleMenu);
+    </script>
+  </body>
 </html>
